@@ -83,6 +83,16 @@ const Navbar = () => {
                             >
                                 Contact
                             </Link>
+                            
+                        </li>
+                        <li>
+                            <Link
+                                to="/watch"
+                                className="block py-2 pl-3 pr-4 text-gray-700 hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white"
+                            >
+                                Watches
+                            </Link>
+                            
                         </li>
                     </ul>
                 </div>

@@ -17,6 +17,8 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+const contactRoutes = require("./routes/contact");
+const productRoutes = require("./routes/product")
 const { default: mongoose } = require('mongoose');
 
 var app = express();
@@ -53,6 +55,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/api/auth', authRoutes);
+app.use('/contact-us', contactRoutes)
+app.use('/products', productRoutes)
+
 
 
 mongoose
